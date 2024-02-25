@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import picture from './assets/kyleramachandran.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='namecard'>
+        <img src = {picture} alt = 'Kyle Ramachandran' width={200} height={200}></img>
+        <div className='h1'>
+            Kyle Ramachandran
+        </div>
+        <div className='subheading'>
+            Web Developer
+        </div>
+        <div className='bodyText'>
+          This is my bio! I am an EECS major at UC Berkeley, and I am interested in
+          martial arts, running, and video games. I like watching MMA and basketball too!
+        </div>
+        <div className='email'>
+            kyleramachandran@berkeley.edu
+        </div>
+      </div>
   );
 }
 
